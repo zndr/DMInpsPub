@@ -1,0 +1,225 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Claude\\DMInps\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|d:\\claude\\dminps\\services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|solutionrelative:services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|d:\\claude\\dminps\\debugs\\debugestraicodicimedici\\obj\\release\\net8.0\\win-x64\\.netcoreapp,version=v8.0.assemblyattributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|solutionrelative:debugs\\debugestraicodicimedici\\obj\\release\\net8.0\\win-x64\\.netcoreapp,version=v8.0.assemblyattributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|d:\\claude\\dminps\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|solutionrelative:assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|d:\\claude\\dminps\\dminps.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|solutionrelative:dminps.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|d:\\claude\\dminps\\dminps.iss||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|solutionrelative:dminps.iss||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|d:\\claude\\dminps\\release-notes-v1.0.6.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|solutionrelative:release-notes-v1.0.6.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|d:\\claude\\dminps\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|d:\\claude\\dminps\\distribuzione.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|solutionrelative:distribuzione.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|d:\\claude\\dminps\\changelog_v1.0.6.2.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|solutionrelative:changelog_v1.0.6.2.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|d:\\claude\\dminps\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|d:\\claude\\dminps\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:887950365:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1428620276:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1421036263:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DatabaseService.cs",
+              "DocumentMoniker": "D:\\Claude\\DMInps\\Services\\DatabaseService.cs",
+              "RelativeDocumentMoniker": "Services\\DatabaseService.cs",
+              "ToolTip": "D:\\Claude\\DMInps\\Services\\DatabaseService.cs",
+              "RelativeToolTip": "Services\\DatabaseService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAArwBEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T13:08:54.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": ".NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "DocumentMoniker": "D:\\Claude\\DMInps\\debugs\\debugEstraiCodiciMedici\\obj\\Release\\net8.0\\win-x64\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "RelativeDocumentMoniker": "debugs\\debugEstraiCodiciMedici\\obj\\Release\\net8.0\\win-x64\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "ToolTip": "D:\\Claude\\DMInps\\debugs\\debugEstraiCodiciMedici\\obj\\Release\\net8.0\\win-x64\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "RelativeToolTip": "debugs\\debugEstraiCodiciMedici\\obj\\Release\\net8.0\\win-x64\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T05:39:25.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DMInps.iss",
+              "DocumentMoniker": "D:\\Claude\\DMInps\\DMInps.iss",
+              "RelativeDocumentMoniker": "DMInps.iss",
+              "ToolTip": "D:\\Claude\\DMInps\\DMInps.iss",
+              "RelativeToolTip": "DMInps.iss",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAEAAAAbAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVLSURBVEhLtZVpbFzVHcV/975lZoxnPN4wY8d2bBI1JEEEJ3HilNAkalVw2FRhq2EJIVUQpFAhAhJtQBQplaj6oVULagRVVSlQCbGIJUIsVqggSpw4NpCQYJMQmybOeHdmvMzMW\u002B7lw4zt2Dhq\u002B6Hn6ehK9717zn3n/d/9w/8TWmsxdw7ggSd\u002B13Lr5ps3zZ2fDxqN47j6276RvvaDLbs6Pzv0Rkdbqzv3uVnY8fieFsd1VcZx/f/EVMbxh0dG/b2vHVD/eOfg\u002BRde3n8XML1xOVs6C60Vnq9xfYXjKdKuIu36OJ7C9aeocX2Nr8AwLUKhACuv/UHMwd73/L79W65ftdYEMOaKA9Q1bNy6em19TXtvWnzcPSHe6xwXLZ1j4otvx8ToxUkRDgoRClgCEBpQStHTOyjWLK\u002BhuKiQocREQyKROPdlx5GT3zMIllTK2Mofbz0dXFzTmVBcyBjEXcnJBHzQ7fJWxxCHO76mKqJZcGUhGtAaDn9xWvQOjIpzfYMilXHCpeXV6z5865/Pz/rIIphPTfNT99RvbvrzmsUl0YqwgZSC/pSia9ilY8Dl\u002BLlxkme7Mb/p4KUHG2hcX4dhSHRWQoPGcxw\u002Bbe8UzTetLZn1DQpu3FG/cN3Nz9XVFkfrymzqSm2WFVpcHTGoLDCpKDCIFoegrBivLMZv/t7Coc\u002B\u002BwtcapUHlRsO0EYYEENMGsvw6O7CscW9sQay8LN\u002BgLGRQFpJEbckVpiRkCAKGxLYkMi8A0Qh9rmbfOweYmEyhlMafIqCVyuqS89FFSzaa5YtW2JYkYksiFgymFaOOz7jnM\u002BkrMipbORJFXp5JqDBM64lOTnf/G8/38X2do0LNMrAL0JHadRlfE7Y1QUNzuN/l5KhH10WfnqQiPq7oS/mkMg5NtTZ/uWUxf/3FJvbs2spLr76J47q5iGYIYAKgXFA65roJlhRHOXAhgxQm\u002BRZ4GobTirNJn56Eyw9LFHs2LKQy38QQ4Co40taO52uEzIpKIeZGpGVeMGn/obGUE4OT7O9Oc3TAobXf5Ui/y7FBl\u002BNDGeLxOOnhCzz35r84P5rMiQEwk7/SeCob07SBESlaeP8d9cs2Lirl3bZvODM0QXt/ita\u002BNEf6Uhzvn6B3OIkzPkZ8KMGN11QTCQU5fT4\u002B/R/4SuFNiSs1O6KK6pobmjesudZCEf\u002B6Ez/m4eblg7RAK3BTFKUHeLihiu3rV1MQsNj9xxepXVhJ44/WkUqn0QhyqYAAnTOQANWVC1ZfXXGVXRow2LGqlOrJHmIT56hJdVOvenhqGRx6dBO7G1fip1M8\u002Bae/8eLbBzhzPs4rb3/AtqZmEAaeUllqPV1FJoCU0pJSErRMfn//Zh7oHSCZylAUvoKqK4sI2RaTGYfXWj5h7\u002Bvv0/p5F974GF2nuvjlffcSLSrEVXr6CBW582n6Dbq\u002BOtX65dmeDEB\u002BwOK6mgrWL61laWUZlm1xtLOb5sd\u002By45nX\u002BBg2wm8iyMsKgnzyLb7qKqqRmmRLU2VpZ8bp8xAmtHqFWue3rnzoduXL1kczQuGItK0zVNnunnjvY/45FAH2rAImRYl4TwaVq3gni1NRAuLEPC9rmUYgrajx8RDW24qnbknZAjTXhrIj1Rt\u002BOltz976s58vt22LkZGLJJNjCAEF4TBVCyq4qjyGaVrZZUydczMwpaC9rU3svLvxEoMZiKbtv/ro17uf2TTueHruciG4tGHNC1MK2o8dFQ/fvbl0vo6mtQYFSARSzGb2ylpcjvqSKpp3K3due6Tlho0/\u002Ba\u002Ba/uUwNDTEnl3b542IXHUVXK6l/g/wvwPHiaT2RlgqVAAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-11-22T04:15:09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CHANGELOG_v1.0.6.2.md",
+              "DocumentMoniker": "D:\\Claude\\DMInps\\ChangeLog_v1.0.6.2.md",
+              "RelativeDocumentMoniker": "ChangeLog_v1.0.6.2.md",
+              "ToolTip": "D:\\Claude\\DMInps\\ChangeLog_v1.0.6.2.md",
+              "RelativeToolTip": "ChangeLog_v1.0.6.2.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-22T04:05:50.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RELEASE-NOTES-v1.0.6.md",
+              "DocumentMoniker": "D:\\Claude\\DMInps\\RELEASE-NOTES-v1.0.6.md",
+              "RelativeDocumentMoniker": "RELEASE-NOTES-v1.0.6.md",
+              "ToolTip": "D:\\Claude\\DMInps\\RELEASE-NOTES-v1.0.6.md",
+              "RelativeToolTip": "RELEASE-NOTES-v1.0.6.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-22T03:58:03.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "README.md",
+              "DocumentMoniker": "D:\\Claude\\DMInps\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "D:\\Claude\\DMInps\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-22T03:57:50.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Claude\\DMInps\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "D:\\Claude\\DMInps\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAApwB4AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T03:57:06.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\Claude\\DMInps\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "D:\\Claude\\DMInps\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-22T03:56:54.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DMInps.csproj",
+              "DocumentMoniker": "D:\\Claude\\DMInps\\DMInps.csproj",
+              "RelativeDocumentMoniker": "DMInps.csproj",
+              "ToolTip": "D:\\Claude\\DMInps\\DMInps.csproj",
+              "RelativeToolTip": "DMInps.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-22T03:56:42.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\Claude\\DMInps\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "AssemblyInfo.cs",
+              "ToolTip": "D:\\Claude\\DMInps\\AssemblyInfo.cs",
+              "RelativeToolTip": "AssemblyInfo.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T03:53:50.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DISTRIBUZIONE.md",
+              "DocumentMoniker": "D:\\Claude\\DMInps\\DISTRIBUZIONE.md",
+              "RelativeDocumentMoniker": "DISTRIBUZIONE.md",
+              "ToolTip": "D:\\Claude\\DMInps\\DISTRIBUZIONE.md",
+              "RelativeToolTip": "DISTRIBUZIONE.md",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAowLEAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-22T03:52:50.345Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

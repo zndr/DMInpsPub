@@ -1,0 +1,20 @@
+# 1. Crea un branch per la nuova funzionalità
+git checkout -b feature/nuova-funzione
+
+# 2. Sviluppa e testa
+
+# 3. Commit delle modifiche
+git add .
+git commit -m "feat: Aggiunta nuova funzione X"
+
+# 4. Torna al main e unisci
+git checkout main
+git merge feature/nuova-funzione
+
+# 5. Aggiorna la versione nel .csproj
+# (vedi sezione successiva)
+
+# 6. Commit e tag della nuova versione
+git add .
+git commit -m "chore: Bump version to 1.1.0"
+git tag -a v1.1.0 -m "Release v1.1.0 - Descrizione modifiche"

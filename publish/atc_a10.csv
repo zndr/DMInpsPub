@@ -1,0 +1,33 @@
+Principio Attivo,Codice ATC,Categoria
+Metformina,A10BA02,Metformina
+Glibenclamide,A10BB01,Sulfaniluree/Glinidi
+Gliclazide,A10BB09,Sulfaniluree/Glinidi
+Glimepiride,A10BB12,Sulfaniluree/Glinidi
+Glipizide,A10BB07,Sulfaniluree/Glinidi
+Nateglinide,A10BX03,Sulfaniluree/Glinidi
+Repaglinide,A10BX02,Sulfaniluree/Glinidi
+Alogliptin,A10BH04,Inibitori DPP-4
+Linagliptin,A10BH05,Inibitori DPP-4
+Saxagliptin,A10BH03,Inibitori DPP-4
+Sitagliptin,A10BH01,Inibitori DPP-4
+Vildagliptin,A10BH02,Inibitori DPP-4
+Dulaglutide,A10BJ05,Agonisti GLP-1/GIP
+Exenatide,A10BJ01,Agonisti GLP-1/GIP
+Liraglutide,A10BJ02,Agonisti GLP-1/GIP
+Lixisenatide,A10BJ03,Agonisti GLP-1/GIP
+Semaglutide,A10BJ06,Agonisti GLP-1/GIP
+Tirzepatide,A10BX16,Agonisti GLP-1/GIP
+Canagliflozin,A10BK02,Inibitori SGLT2
+Dapagliflozin,A10BK01,Inibitori SGLT2
+Empagliflozin,A10BK03,Inibitori SGLT2
+Ertugliflozin,A10BK04,Inibitori SGLT2
+Insulina aspart,A10AB05,Insulina
+Insulina degludec,A10AE06,Insulina
+Insulina detemir,A10AE05,Insulina
+Insulina glargine,A10AE04,Insulina
+Insulina glulisina,A10AB06,Insulina
+Insulina lispro,A10AB04,Insulina
+Insulina umana (regolare),A10AB01,Insulina
+Insulina umana isofano (NPH),A10AC01,Insulina
+Acarbose,A10BF01,Altri
+Pioglitazone,A10BG03,Altri

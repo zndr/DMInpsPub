@@ -1,0 +1,219 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\OneDrive - ZANI Dario Giorgio\\Apps\\DMInps1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|d:\\onedrive - zani dario giorgio\\apps\\dminps1\\debugs\\debugestraicodicimedici\\obj\\release\\net8.0\\win-x64\\.netcoreapp,version=v8.0.assemblyattributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|solutionrelative:debugs\\debugestraicodicimedici\\obj\\release\\net8.0\\win-x64\\.netcoreapp,version=v8.0.assemblyattributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|d:\\onedrive - zani dario giorgio\\apps\\dminps1\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|solutionrelative:assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|d:\\onedrive - zani dario giorgio\\apps\\dminps1\\infoprogrammawindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|solutionrelative:infoprogrammawindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|d:\\onedrive - zani dario giorgio\\apps\\dminps1\\dminps.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|solutionrelative:dminps.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|d:\\onedrive - zani dario giorgio\\apps\\dminps1\\dminps.iss||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|solutionrelative:dminps.iss||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|d:\\onedrive - zani dario giorgio\\apps\\dminps1\\release-notes-v1.0.6.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|solutionrelative:release-notes-v1.0.6.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|d:\\onedrive - zani dario giorgio\\apps\\dminps1\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|d:\\onedrive - zani dario giorgio\\apps\\dminps1\\distribuzione.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|solutionrelative:distribuzione.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|d:\\onedrive - zani dario giorgio\\apps\\dminps1\\changelog_v1.0.6.2.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|solutionrelative:changelog_v1.0.6.2.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|d:\\onedrive - zani dario giorgio\\apps\\dminps1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|d:\\onedrive - zani dario giorgio\\apps\\dminps1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5309377A-833F-9F7A-0D5D-A93D7442EFD3}|DMInps.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:887950365:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1428620276:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1421036263:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": ".NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "DocumentMoniker": "D:\\OneDrive - ZANI Dario Giorgio\\Apps\\DMInps1\\debugs\\debugEstraiCodiciMedici\\obj\\Release\\net8.0\\win-x64\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "RelativeDocumentMoniker": "debugs\\debugEstraiCodiciMedici\\obj\\Release\\net8.0\\win-x64\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "ToolTip": "D:\\OneDrive - ZANI Dario Giorgio\\Apps\\DMInps1\\debugs\\debugEstraiCodiciMedici\\obj\\Release\\net8.0\\win-x64\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "RelativeToolTip": "debugs\\debugEstraiCodiciMedici\\obj\\Release\\net8.0\\win-x64\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T05:39:25.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InfoProgrammaWindow.xaml",
+              "DocumentMoniker": "D:\\OneDrive - ZANI Dario Giorgio\\Apps\\DMInps1\\InfoProgrammaWindow.xaml",
+              "RelativeDocumentMoniker": "InfoProgrammaWindow.xaml",
+              "ToolTip": "D:\\OneDrive - ZANI Dario Giorgio\\Apps\\DMInps1\\InfoProgrammaWindow.xaml",
+              "RelativeToolTip": "InfoProgrammaWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-22T04:30:48.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DMInps.iss",
+              "DocumentMoniker": "D:\\OneDrive - ZANI Dario Giorgio\\Apps\\DMInps1\\DMInps.iss",
+              "RelativeDocumentMoniker": "DMInps.iss",
+              "ToolTip": "D:\\OneDrive - ZANI Dario Giorgio\\Apps\\DMInps1\\DMInps.iss",
+              "RelativeToolTip": "DMInps.iss",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAEAAAAbAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVkSURBVEhLtVV5bBRVHP7m2Nnd0t1uj6Vs7xYakULAAi2tgLTRCK2oMbYRQS5TIgjGiCYqGCXBBOMfGsVIwBgT1MQgBJAQkaYaJKUHLXJvKbDFUrbH9tjtscfszPh7s9tCOZR//Ca/eW929n3f\u002B11v8L9C0zQuOh2Hde98XL20fElp9PFfodEVCsnajc6\u002BzqaT1ZudZ2r3NzfWydHX90fV29urQ7KsBkOy8l/mD4aU3r5\u002BZde\u002BGvW7wydvfvX9kZeJYmzjfHQcB01TEVY0yIqKUFhFQGam6HP2W8TYew00hSAaYDYbMXvGI44QpL079x5Z9ticeSLjEnTGu5BfVLJy7ryC7KaOAPe7a5g76hziqp2D3Nkbg1z/wAhnMXGc2Whgu\u002BQ0uqmqiraOHq5wejYSE\u002BLh8Q4Xeb3e9gvN9RfvETAlpfOO2U\u002BubDXlZju9Km4FBbhlHhe9wDGXjIPNHpxqvoIMq4a0ifGUAeYxcOpsK9fR3c\u002B1d/ZwFDaLPSWz\u002BLeDP\u002B4cl2TOFIvsyq0rCsorvijMTbKlWgTwPIcuv4qWXhnN3TLOtQ/Bd90F8Voz9rxWhLIF\u002BRAEXhci0KAhHArhzyYnV7l4XtK4HMQtrCrIKl6yIz8n0ZafLCHfLiEv3oDJVgHpcSJS4wTYEs1AciLCyQ68/201as9chkIuqEStRkdBlMCRKIEbE\u002BBTZkrGvLJdjjRHSnKsgGQzMx42iccEkYdZ4GCkRZKBBx9jBGxWdMoa9h6uwfCIn/LAEh414tMoLzqvficdLWFqiZgyZRYjsBKp1QD0BFT0hxQMhRWMULkEaTGrHB4qYmJEmOMtqDvvRKvrb6o6BQqrKt1UPfEMEQEpDpo1pzhILy2SBpOg4VSXjIv9YbQMKGjzqXAPqej0K6AEoiJHwpfP5OLrV0uxffNK7PnpAKhvoiG6bQx6rUKlxlM1hyx7MTXRhppbQfCciFjyIkz/6yVPrvtIyCvj8SQV2xdlIT1WBEUN1CKob2zS\u002B4bjI6Q8x90dIo2PMfmkT8vsON8zgiOuABq6Q6gjL\u002BrJTvdQ9XiCcLvdCPTewo4Df\u002BBmv09fSkWmYyz\u002BZGE2sg4k6AKCNSFrzfMFeSVT7Pil8RqueobR1OVHXWcA9Z1\u002BnOsaRkevD6GhQbg9Xix8NBNWswmtN91jfaDQjhmxTk7zcSFKzcyeX7mocIaBkue\u002B4oTiCEOOiSV5ihEdG5D9SAh0Y2NRBtYumIs4owFbPtuNnKx0lD1RDH8gQEIcJVbnpIgw0Wi42C0zPW3u5NRJkt0ooGqOHZkjbXAMtyPb70KB2oateUDtm6XYUjYbSsCPdz//BrsP1eAqefDDoWNYXVFJpALtnnlBxpIcVdM94HneQAaTQcQna8qxrqMbPn8QCZYJyJiYALNkwAhVz77qE9j186\u002Bo\u002B6sFYQpXy6UWvL7qFdjo/JEpNKPHAhvHlWnL5Ut1F663Bdk8ltyfmZ2KBdNyMC09GQYib3C6UPnWR6ja9hVONp5HeKAPU5Is2LR6FTIyMineFB591xFjiWYjQ0SUF22Zswo/2LBh/XPTp\u002BbaYkxmKy9K4qWrLuw/ehwnapuhCXQk07GcZIlB0ZxZWLGsArb4BD3cozsfhUD129hwmlu/bLH99juON0OUphljrRmLnn5229IXXpou0e77\u002Bgbg8w2CShtxFgsy0lIxKcUBkcT0ZSSgT\u002B6ASLXb1NjIbVhedofAbXAVa984/t6WD0uHQtRmdy1nQqOOPwi6wOkGbuPycnuk0cZDrzCWIp6IWFfeaZErIvEgYwSjSWbP9\u002BDF1Zuq55c89VAf/QfB4/HQObX2viFiYJ7Fkd33k/rwgPIPx4mk9hyfBeMAAAAASUVORK5CYII=",
+              "WhenOpened": "2025-11-22T04:15:09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CHANGELOG_v1.0.6.2.md",
+              "DocumentMoniker": "D:\\OneDrive - ZANI Dario Giorgio\\Apps\\DMInps1\\ChangeLog_v1.0.6.2.md",
+              "RelativeDocumentMoniker": "ChangeLog_v1.0.6.2.md",
+              "ToolTip": "D:\\OneDrive - ZANI Dario Giorgio\\Apps\\DMInps1\\ChangeLog_v1.0.6.2.md",
+              "RelativeToolTip": "ChangeLog_v1.0.6.2.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-22T04:05:50.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RELEASE-NOTES-v1.0.6.md",
+              "DocumentMoniker": "D:\\OneDrive - ZANI Dario Giorgio\\Apps\\DMInps1\\RELEASE-NOTES-v1.0.6.md",
+              "RelativeDocumentMoniker": "RELEASE-NOTES-v1.0.6.md",
+              "ToolTip": "D:\\OneDrive - ZANI Dario Giorgio\\Apps\\DMInps1\\RELEASE-NOTES-v1.0.6.md",
+              "RelativeToolTip": "RELEASE-NOTES-v1.0.6.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-22T03:58:03.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "README.md",
+              "DocumentMoniker": "D:\\OneDrive - ZANI Dario Giorgio\\Apps\\DMInps1\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "D:\\OneDrive - ZANI Dario Giorgio\\Apps\\DMInps1\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-22T03:57:50.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\OneDrive - ZANI Dario Giorgio\\Apps\\DMInps1\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "D:\\OneDrive - ZANI Dario Giorgio\\Apps\\DMInps1\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAApwB4AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T03:57:06.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\OneDrive - ZANI Dario Giorgio\\Apps\\DMInps1\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "D:\\OneDrive - ZANI Dario Giorgio\\Apps\\DMInps1\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-22T03:56:54.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DMInps.csproj",
+              "DocumentMoniker": "D:\\OneDrive - ZANI Dario Giorgio\\Apps\\DMInps1\\DMInps.csproj",
+              "RelativeDocumentMoniker": "DMInps.csproj",
+              "ToolTip": "D:\\OneDrive - ZANI Dario Giorgio\\Apps\\DMInps1\\DMInps.csproj",
+              "RelativeToolTip": "DMInps.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-22T03:56:42.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\OneDrive - ZANI Dario Giorgio\\Apps\\DMInps1\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "AssemblyInfo.cs",
+              "ToolTip": "D:\\OneDrive - ZANI Dario Giorgio\\Apps\\DMInps1\\AssemblyInfo.cs",
+              "RelativeToolTip": "AssemblyInfo.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T03:53:50.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DISTRIBUZIONE.md",
+              "DocumentMoniker": "D:\\OneDrive - ZANI Dario Giorgio\\Apps\\DMInps1\\DISTRIBUZIONE.md",
+              "RelativeDocumentMoniker": "DISTRIBUZIONE.md",
+              "ToolTip": "D:\\OneDrive - ZANI Dario Giorgio\\Apps\\DMInps1\\DISTRIBUZIONE.md",
+              "RelativeToolTip": "DISTRIBUZIONE.md",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAowLEAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-22T03:52:50.345Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
