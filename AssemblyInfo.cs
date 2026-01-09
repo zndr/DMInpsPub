@@ -19,9 +19,9 @@ using System.Windows;
 [assembly: Guid("a1b2c3d4-e5f6-4a5b-8c9d-0e1f2a3b4c5d")]
 
 // Informazioni sulla versione - devono corrispondere al .csproj
-[assembly: AssemblyVersion("1.0.7")]
-[assembly: AssemblyFileVersion("1.0.7")]
-[assembly: AssemblyInformationalVersion("1.0.7")]
+[assembly: AssemblyVersion("1.0.9")]
+[assembly: AssemblyFileVersion("1.0.9")]
+[assembly: AssemblyInformationalVersion("1.0.9")]
 
 // ThemeInfo per WPF
 [assembly: ThemeInfo(

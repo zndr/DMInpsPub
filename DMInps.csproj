@@ -14,9 +14,9 @@
     <!-- Informazioni Assembly -->
     <AssemblyName>DMInps</AssemblyName>
     <Product>DMInps - Crea Relazione Diabete per INPS</Product>
-    <Version>1.0.7</Version>
-    <FileVersion>1.0.7</FileVersion>
-    <AssemblyVersion>1.0.7</AssemblyVersion>
+    <Version>1.0.9</Version>
+    <FileVersion>1.0.9</FileVersion>
+    <AssemblyVersion>1.0.9</AssemblyVersion>
     <Authors>Dario Giorgio Zani</Authors>
     <Company>MMG in Lumezzane (BS)</Company>
     <Description>Sistema di creazione relazione diabete per INPS con generazione PDF</Description>
@@ -49,7 +49,7 @@
   <!-- Note di versione -->
   <PropertyGroup>
     <VersionNotes>
-      Versione 1.0.7 - $(CurrentDate)
+      Versione 1.0.9 - $(CurrentDate)
       ================================
     </VersionNotes>
   </PropertyGroup>

@@ -15,6 +15,11 @@ namespace DMInps
 {
     public partial class MainWindow : Window
     {
+        /// <summary>
+        /// Versione corrente dell'applicazione (centralizzata)
+        /// </summary>
+        public const string APP_VERSION = "1.0.9";
+
         private readonly DatabaseService _databaseService;
         private readonly PdfService _pdfService;
         private List<MedicoSelectionData>? _mediciList;
@@ -28,7 +33,7 @@ namespace DMInps
             InitializeComponent();
             _databaseService = DatabaseService.Instance;
             _pdfService = new PdfService();
-            Title = "DMInps - Sistema Gestione Dati Medico v1.0.5";
+            Title = $"DMInps - Generatore Relazione Diabete INPS v{APP_VERSION}";
             LoadSettings();
         }
 
@@ -308,20 +313,188 @@ namespace DMInps
                     MessageBoxButton.OK,
                     MessageBoxImage.Error);
                 }
-            }        /// <summary>
-                     /// Menu: Cerca aggiornamenti
-                     /// </summary>
-        private void MenuCercaAggiornamenti_Click(object sender, RoutedEventArgs e)
+            }
+
+        /// <summary>
+        /// Menu: Cerca aggiornamenti
+        /// </summary>
+        private async void MenuCercaAggiornamenti_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show(
-                "Funzionalità in sviluppo.\n\n" +
-                "Il sistema di controllo e download aggiornamenti\n" +
-                "verrà implementato nelle prossime versioni.\n\n" +
-                "Versione corrente: 1.0.5\n" +
-                "Data: " + DateTime.Now.ToString("dd/MM/yyyy"),
-                "Cerca Aggiornamenti",
-                MessageBoxButton.OK,
+            await CheckForUpdatesManualAsync();
+        }
+
+        /// <summary>
+        /// Controllo aggiornamenti manuale (da menu) - mostra sempre il risultato
+        /// </summary>
+        private async Task CheckForUpdatesManualAsync()
+        {
+            try
+            {
+                UpdateStatus("Controllo aggiornamenti in corso...");
+
+                var result = await UpdateCheckService.Instance.CheckForUpdatesAsync(APP_VERSION);
+
+                if (!result.Success)
+                {
+                    MessageBox.Show(
+                        $"Impossibile verificare gli aggiornamenti.\n\n{result.ErrorMessage}",
+                        "Errore Controllo Aggiornamenti",
+                        MessageBoxButton.OK,
+                        MessageBoxImage.Warning);
+                    UpdateStatus("Controllo aggiornamenti fallito");
+                    return;
+                }
+
+                if (result.IsUpdateAvailable)
+                {
+                    ShowUpdateAvailableDialog(result);
+                }
+                else
+                {
+                    // Determina il messaggio appropriato
+                    string message;
+                    string title;
+
+                    int comparison = CompareVersions(APP_VERSION, result.LatestVersion);
+
+                    if (comparison > 0)
+                    {
+                        // Versione corrente più recente di quella pubblicata (es. sviluppo)
+                        message = $"Stai utilizzando una versione di sviluppo.\n\n" +
+                                  $"Versione corrente: {APP_VERSION}\n" +
+                                  $"Ultima versione pubblicata: {result.LatestVersion}";
+                        title = "Versione di Sviluppo";
+                    }
+                    else
+                    {
+                        // Versioni uguali
+                        message = $"L'applicazione e' aggiornata all'ultima versione.\n\n" +
+                                  $"Versione: {APP_VERSION}";
+                        title = "Nessun Aggiornamento";
+                    }
+
+                    MessageBox.Show(message, title, MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+
+                UpdateStatus("Controllo aggiornamenti completato");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    $"Errore durante il controllo aggiornamenti:\n\n{ex.Message}",
+                    "Errore",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error);
+                UpdateStatus("Errore controllo aggiornamenti");
+            }
+        }
+
+        /// <summary>
+        /// Controllo aggiornamenti automatico all'avvio (silenzioso)
+        /// </summary>
+        private async Task CheckForUpdatesOnStartupAsync()
+        {
+            try
+            {
+                // Piccolo ritardo per non interferire con il caricamento iniziale
+                await Task.Delay(2000);
+
+                var result = await UpdateCheckService.Instance.CheckForUpdatesAsync(APP_VERSION);
+
+                if (result.Success && result.IsUpdateAvailable)
+                {
+                    // Mostra notifica solo se c'e' un aggiornamento
+                    ShowUpdateAvailableDialog(result);
+                }
+                // Se non c'e' aggiornamento o c'e' un errore, non mostrare nulla (silenzioso)
+            }
+            catch (Exception ex)
+            {
+                // Errori silenziosi all'avvio - solo log
+                Debug.WriteLine($"[UpdateCheck] Errore controllo automatico: {ex.Message}");
+            }
+        }
+
+        /// <summary>
+        /// Confronta due versioni semantiche
+        /// </summary>
+        /// <returns>-1 se v1 minore di v2, 0 se uguali, 1 se v1 maggiore di v2</returns>
+        private static int CompareVersions(string version1, string version2)
+        {
+            try
+            {
+                var v1Parts = version1.Split('.').Select(int.Parse).ToArray();
+                var v2Parts = version2.Split('.').Select(int.Parse).ToArray();
+
+                int maxLength = Math.Max(v1Parts.Length, v2Parts.Length);
+
+                for (int i = 0; i < maxLength; i++)
+                {
+                    int v1Part = i < v1Parts.Length ? v1Parts[i] : 0;
+                    int v2Part = i < v2Parts.Length ? v2Parts[i] : 0;
+
+                    if (v1Part < v2Part) return -1;
+                    if (v1Part > v2Part) return 1;
+                }
+
+                return 0;
+            }
+            catch
+            {
+                return string.Compare(version1, version2, StringComparison.OrdinalIgnoreCase);
+            }
+        }
+
+        /// <summary>
+        /// Mostra la finestra di dialogo per un aggiornamento disponibile
+        /// </summary>
+        private void ShowUpdateAvailableDialog(UpdateCheckResult result)
+        {
+            var message = $"E' disponibile una nuova versione di DMInps!\n\n" +
+                          $"Versione corrente: {APP_VERSION}\n" +
+                          $"Nuova versione: {result.LatestVersion}\n\n";
+
+            if (!string.IsNullOrEmpty(result.ReleaseNotes))
+            {
+                // Prendi solo le prime righe delle note
+                var notesPreview = string.Join("\n", result.ReleaseNotes.Split('\n').Take(5));
+                if (result.ReleaseNotes.Split('\n').Length > 5)
+                    notesPreview += "\n...";
+                message += $"Note di rilascio:\n{notesPreview}\n\n";
+            }
+
+            message += "Vuoi scaricare l'aggiornamento?";
+
+            var dialogResult = MessageBox.Show(
+                message,
+                "Aggiornamento Disponibile",
+                MessageBoxButton.YesNo,
                 MessageBoxImage.Information);
+
+            if (dialogResult == MessageBoxResult.Yes)
+            {
+                // Prova a scaricare l'installer direttamente, altrimenti apri la pagina release
+                string urlToOpen = result.DownloadUrl ?? result.ReleasePageUrl ??
+                    "https://github.com/zndr/DMInpsPub/releases";
+
+                try
+                {
+                    Process.Start(new ProcessStartInfo
+                    {
+                        FileName = urlToOpen,
+                        UseShellExecute = true
+                    });
+                    UpdateStatus($"Apertura download aggiornamento...");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(
+                        $"Impossibile aprire il link:\n{urlToOpen}\n\nErrore: {ex.Message}",
+                        "Errore",
+                        MessageBoxButton.OK,
+                        MessageBoxImage.Error);
+                }
+            }
         }
 
         #endregion
@@ -381,6 +554,9 @@ namespace DMInps
                 SelectSavedMedico();
 
                 UpdateStatus($"✅ Caricati {_mediciList.Count} medici. Seleziona il medico e inserisci il codice fiscale.");
+
+                // Controllo aggiornamenti in background (fire-and-forget, silenzioso)
+                _ = CheckForUpdatesOnStartupAsync();
             }
             catch (Exception ex)
             {
