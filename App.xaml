@@ -1,0 +1,26 @@
+<Application
+    x:Class="DMInps.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <!--  Stili globali dell'applicazione  -->
+
+        <!--  Stile per TextBox  -->
+        <Style TargetType="TextBox">
+            <Setter Property="BorderBrush" Value="#BDC3C7" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Style.Triggers>
+                <Trigger Property="IsFocused" Value="True">
+                    <Setter Property="BorderBrush" Value="#3498DB" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!--  Stile per Border  -->
+        <Style TargetType="Border">
+            <Setter Property="CornerRadius" Value="3" />
+        </Style>
+
+    </Application.Resources>
+</Application>

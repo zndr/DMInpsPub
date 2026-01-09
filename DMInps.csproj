@@ -1,0 +1,75 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Target Framework: .NET 8.0 (ultima versione LTS) -->
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>DMInps.ico</ApplicationIcon>
+    <Nullable>enable</Nullable>
+        <!-- ✅ AGGIUNGI QUESTE DUE RIGHE -->
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+    
+    <!-- Informazioni Assembly -->
+    <AssemblyName>DMInps</AssemblyName>
+    <Product>DMInps - Crea Relazione Diabete per INPS</Product>
+    <Version>1.0.7</Version>
+    <FileVersion>1.0.7</FileVersion>
+    <AssemblyVersion>1.0.7</AssemblyVersion>
+    <Authors>Dario Giorgio Zani</Authors>
+    <Company>MMG in Lumezzane (BS)</Company>
+    <Description>Sistema di creazione relazione diabete per INPS con generazione PDF</Description>
+    <Copyright>Copyright © 2025</Copyright>
+    
+    <!-- Richiede privilegi amministratore per accesso al registry -->
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+  <!-- ✅ PropertyGroup SEPARATO per la pubblicazione -->
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <!-- Configurazione Pubblicazione (solo per Release) -->
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishReadyToRun>true</PublishReadyToRun>
+    <PublishTrimmed>false</PublishTrimmed>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Driver PostgreSQL per .NET -->
+    <PackageReference Include="Npgsql" Version="8.0.5" />
+    
+    <!-- Libreria opensource per generazione PDF -->
+    <PackageReference Include="QuestPDF" Version="2024.10.3" />
+    <PackageReference Include="SkiaSharp" Version="3.119.1" />
+    <PackageReference Include="SkiaSharp.NativeAssets.Win32" Version="3.119.1" />
+  </ItemGroup>
+
+  <!-- Note di versione -->
+  <PropertyGroup>
+    <VersionNotes>
+      Versione 1.0.7 - $(CurrentDate)
+      ================================
+    </VersionNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove="D:\OneDrive - ZANI Dario Giorgio\Apps\DMInps1\Services\.editorconfig" />
+    <Resource Include="DMInps.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="atc_a10.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <EmbeddedResource Include="CHANGELOG_v1.0.6.2.md" />
+    <None Update="CHANGELOG.md">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+</ItemGroup>
+
+</Project>

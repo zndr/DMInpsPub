@@ -1,0 +1,226 @@
+﻿<Window
+    x:Class="DMInps.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="DMInps - generatore relazione diabete per INPS"
+    Width="700"
+    Height="730"
+    Icon="DMInps.ico"
+    Loaded="Window_Loaded"
+    ResizeMode="CanMinimize"
+    WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!--  MENU BAR  -->
+        <Menu
+            Grid.Row="0"
+            Padding="5"
+            Background="#F8F9FA">
+            <MenuItem FontSize="13" Header="_File">
+                <MenuItem Click="MenuNuovoCertificato_Click" Header="🆕 Nuovo certificato" />
+                <MenuItem Click="MenuMostraRecenti_Click" Header="📋 Mostra recenti" />
+                <Separator />
+                <MenuItem Header="📁 Cartella certificati">
+                    <MenuItem Click="MenuApriCartella_Click" Header="Apri" />
+                    <MenuItem Click="MenuCambiaCartella_Click" Header="Cambia..." />
+                </MenuItem>
+                <Separator />
+                <MenuItem Click="MenuEsci_Click" Header="❌ Esci" />
+            </MenuItem>
+
+            <MenuItem FontSize="13" Header="_Opzioni">
+                <MenuItem Click="MenuCambiaMedico_Click" Header="👨‍⚕️ Cambia Medico" />
+                <MenuItem Click="MenuNomeFile_Click" Header="📝 Nome file..." />
+                <Separator />
+                <MenuItem Click="MenuPrerequisiti_Click" Header="⚙️ Prerequisiti" />
+            </MenuItem>
+
+            <MenuItem FontSize="13" Header="_Aiuto">
+                <MenuItem Click="MenuGuida_Click" Header="📖 Guida" />
+                <MenuItem Click="MenuInfoProgramma_Click" Header="ℹ️ Info programma" />
+                <MenuItem Click="MenuStoricoVersioni_Click" Header="📜 Storico versioni" />
+                <Separator />
+                <MenuItem Click="MenuCercaAggiornamenti_Click" Header="🔄 Cerca aggiornamenti" />
+            </MenuItem>
+        </Menu>
+
+        <!--  CONTENUTO PRINCIPALE  -->
+        <Grid Grid.Row="1" Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <!--  HEADER  -->
+            <TextBlock
+                Grid.Row="0"
+                Margin="0,0,0,20"
+                HorizontalAlignment="Center"
+                FontSize="20"
+                FontWeight="Bold"
+                Foreground="#2C3E50"
+                Text="DMInps - Relazione Diabetologica INPS" />
+
+            <!--  SEZIONE SELEZIONE MEDICO (v1.0.5)  -->
+            <Border
+                Grid.Row="1"
+                Margin="0,0,0,15"
+                Padding="15"
+                Background="#EBF5FB"
+                BorderBrush="#3498DB"
+                BorderThickness="2"
+                CornerRadius="5">
+                <StackPanel>
+                    <TextBlock
+                        Margin="0,0,0,10"
+                        FontSize="14"
+                        FontWeight="SemiBold"
+                        Foreground="#2C3E50"
+                        Text="👨‍⚕️ Medico Certificatore" />
+                    <ComboBox
+                        x:Name="ComboMedici"
+                        Margin="0,0,0,10"
+                        Padding="8"
+                        DisplayMemberPath="NomeCompleto"
+                        FontSize="13"
+                        SelectionChanged="ComboMedici_SelectionChanged" />
+                    <Button
+                        x:Name="BtnRefreshMedici"
+                        Padding="8,5"
+                        HorizontalAlignment="Left"
+                        Background="#3498DB"
+                        BorderThickness="0"
+                        Click="BtnRefreshMedici_Click"
+                        Content="🔄 Aggiorna Elenco Medici"
+                        FontSize="12"
+                        Foreground="White" />
+                </StackPanel>
+            </Border>
+
+            <!--  SEZIONE PAZIENTE  -->
+            <Border
+                Grid.Row="2"
+                Margin="0,0,0,15"
+                Padding="15"
+                Background="#ECF0F1"
+                BorderBrush="#BDC3C7"
+                BorderThickness="1"
+                CornerRadius="5">
+                <StackPanel>
+                    <TextBlock
+                        Margin="0,0,0,10"
+                        FontSize="14"
+                        FontWeight="SemiBold"
+                        Text="👤 Codice Fiscale Paziente" />
+                    <TextBox
+                        x:Name="PatientCodeTextBox"
+                        Padding="8"
+                        VerticalContentAlignment="Center"
+                        CharacterCasing="Upper"
+                        FontSize="14"
+                        MaxLength="16"
+                        TextChanged="PatientCodeTextBox_TextChanged" />
+                </StackPanel>
+            </Border>
+
+            <!--  SEZIONE NOTE MEDICO (v1.0.4)  -->
+            <Border
+                Grid.Row="3"
+                Margin="0,0,0,15"
+                Padding="15"
+                Background="#F8F9FA"
+                BorderBrush="#BDC3C7"
+                BorderThickness="1"
+                CornerRadius="5">
+                <StackPanel>
+                    <TextBlock
+                        Margin="0,0,0,10"
+                        FontSize="14"
+                        FontWeight="SemiBold"
+                        Text="📝 Note Medico (opzionale)" />
+                    <TextBox
+                        x:Name="TxtNoteMedico"
+                        Height="60"
+                        Padding="8"
+                        AcceptsReturn="True"
+                        FontSize="12"
+                        TextWrapping="Wrap"
+                        VerticalScrollBarVisibility="Auto" />
+                </StackPanel>
+            </Border>
+
+            <!--  STATUS BAR  -->
+            <Border
+                Grid.Row="4"
+                Margin="0,0,0,10"
+                Padding="10"
+                Background="#F8F9FA"
+                BorderBrush="#BDC3C7"
+                BorderThickness="1"
+                CornerRadius="5">
+                <TextBlock
+                    x:Name="StatusTextBlock"
+                    FontSize="12"
+                    Foreground="#2C3E50"
+                    Text="Pronto. Seleziona il medico e inserisci il codice fiscale." />
+            </Border>
+
+            <!--  PULSANTI AZIONE  -->
+            <Grid Grid.Row="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <Button
+                    x:Name="BtnApriCartella"
+                    Grid.Column="0"
+                    Margin="0,0,10,0"
+                    Padding="15,8"
+                    Background="#16A085"
+                    BorderThickness="0"
+                    Click="BtnApriCartella_Click"
+                    Content="📁 Apri Cartella PDF"
+                    FontSize="13"
+                    FontWeight="Bold"
+                    Foreground="White" />
+
+                <Button
+                    x:Name="BtnChiudi"
+                    Grid.Column="1"
+                    Margin="0,0,10,0"
+                    Padding="15,8"
+                    Background="#E74C3C"
+                    BorderThickness="0"
+                    Click="BtnChiudi_Click"
+                    Content="❌ Chiudi"
+                    FontSize="13"
+                    FontWeight="Bold"
+                    Foreground="White" />
+
+                <Button
+                    x:Name="GenerateButton"
+                    Grid.Column="2"
+                    Padding="20,8"
+                    Background="#27AE60"
+                    BorderThickness="0"
+                    Click="GenerateButton_Click"
+                    Content="📄 Genera PDF"
+                    FontSize="14"
+                    FontWeight="Bold"
+                    Foreground="White"
+                    IsEnabled="False" />
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

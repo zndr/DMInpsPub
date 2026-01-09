@@ -1,0 +1,267 @@
+<Window
+    x:Class="DMInps.ComplicanzeEditorWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Modifica Complicanze Diabetiche"
+    Width="850"
+    Height="600"
+    Icon="DMInps.ico"
+    ResizeMode="CanResize"
+    WindowStartupLocation="CenterOwner">
+
+    <Window.Resources>
+        <!-- Stile per le intestazioni di colonna -->
+        <Style x:Key="HeaderStyle" TargetType="TextBlock">
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="FontSize" Value="12" />
+            <Setter Property="Foreground" Value="#2C3E50" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+
+        <!-- Stile per RadioButton -->
+        <Style x:Key="RadioStyle" TargetType="RadioButton">
+            <Setter Property="Margin" Value="5,0" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+
+        <!-- Stile per ComboBox -->
+        <Style x:Key="ComboStyle" TargetType="ComboBox">
+            <Setter Property="Padding" Value="5,3" />
+            <Setter Property="MinWidth" Value="100" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Border
+            Grid.Row="0"
+            Padding="15"
+            Background="#8E44AD">
+            <StackPanel>
+                <TextBlock
+                    FontSize="16"
+                    FontWeight="Bold"
+                    Foreground="White"
+                    Text="Modifica Complicanze Diabetiche" />
+                <TextBlock
+                    Margin="0,5,0,0"
+                    FontSize="12"
+                    Foreground="#E8DAEF"
+                    Text="Modifica i valori delle complicanze prima di generare il PDF" />
+            </StackPanel>
+        </Border>
+
+        <!-- Tabella Complicanze -->
+        <Border
+            Grid.Row="1"
+            Margin="15,10,15,10"
+            BorderBrush="#BDC3C7"
+            BorderThickness="1"
+            CornerRadius="5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <!-- Intestazione tabella -->
+                <Border
+                    Grid.Row="0"
+                    Background="#ECF0F1"
+                    BorderBrush="#BDC3C7"
+                    BorderThickness="0,0,0,1">
+                    <Grid Margin="10,8">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="200" />
+                            <ColumnDefinition Width="140" />
+                            <ColumnDefinition Width="130" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock
+                            Grid.Column="0"
+                            Style="{StaticResource HeaderStyle}"
+                            Text="Complicanza" />
+                        <TextBlock
+                            Grid.Column="1"
+                            Style="{StaticResource HeaderStyle}"
+                            Text="Presente" />
+                        <TextBlock
+                            Grid.Column="2"
+                            Style="{StaticResource HeaderStyle}"
+                            Text="Grado" />
+                        <TextBlock
+                            Grid.Column="3"
+                            Style="{StaticResource HeaderStyle}"
+                            Text="Note" />
+                    </Grid>
+                </Border>
+
+                <!-- Lista complicanze scrollabile -->
+                <ScrollViewer
+                    Grid.Row="1"
+                    VerticalScrollBarVisibility="Auto">
+                    <ItemsControl x:Name="ComplicanzeItemsControl">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Border
+                                    Padding="10,8"
+                                    BorderBrush="#E5E7EB"
+                                    BorderThickness="0,0,0,1">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="200" />
+                                            <ColumnDefinition Width="140" />
+                                            <ColumnDefinition Width="130" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <!-- Nome Complicanza -->
+                                        <TextBlock
+                                            Grid.Column="0"
+                                            VerticalAlignment="Center"
+                                            FontSize="12"
+                                            Foreground="#34495E"
+                                            Text="{Binding ComplicationType}"
+                                            TextWrapping="Wrap" />
+
+                                        <!-- Radio Button Presente (Sì/No) -->
+                                        <StackPanel
+                                            Grid.Column="1"
+                                            Orientation="Horizontal"
+                                            VerticalAlignment="Center">
+                                            <RadioButton
+                                                Content="Sì"
+                                                FontSize="11"
+                                                Foreground="#E74C3C"
+                                                GroupName="{Binding ComplicationType}"
+                                                IsChecked="{Binding IsPresentYes, Mode=TwoWay}"
+                                                Style="{StaticResource RadioStyle}" />
+                                            <RadioButton
+                                                Content="No"
+                                                FontSize="11"
+                                                Foreground="#27AE60"
+                                                GroupName="{Binding ComplicationType}"
+                                                IsChecked="{Binding IsPresentNo, Mode=TwoWay}"
+                                                Style="{StaticResource RadioStyle}" />
+                                        </StackPanel>
+
+                                        <!-- Dropdown Grado -->
+                                        <ComboBox
+                                            Grid.Column="2"
+                                            IsEnabled="{Binding IsPresentYes}"
+                                            ItemsSource="{Binding GradoOptions}"
+                                            SelectedItem="{Binding Severity, Mode=TwoWay}"
+                                            Style="{StaticResource ComboStyle}" />
+
+                                        <!-- Note Testo Libero -->
+                                        <TextBox
+                                            Grid.Column="3"
+                                            Margin="10,0,0,0"
+                                            Padding="5,3"
+                                            VerticalAlignment="Center"
+                                            FontSize="11"
+                                            Text="{Binding Notes, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                            TextWrapping="NoWrap" />
+                                    </Grid>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>
+            </Grid>
+        </Border>
+
+        <!-- Legenda gradi -->
+        <Border
+            Grid.Row="2"
+            Margin="15,0,15,10"
+            Padding="10"
+            Background="#F8F9FA"
+            BorderBrush="#BDC3C7"
+            BorderThickness="1"
+            CornerRadius="5">
+            <StackPanel>
+                <TextBlock
+                    FontSize="11"
+                    FontWeight="Bold"
+                    Foreground="#34495E"
+                    Text="Criteri di classificazione:" />
+                <WrapPanel Margin="0,5,0,0">
+                    <TextBlock Margin="0,0,20,0" FontSize="10">
+                        <Run FontWeight="Bold" Foreground="#27AE60">Lieve:</Run>
+                        <Run Foreground="#7F8C8D">nefropatia (VFG 90-60); retinopatia non proliferante; neuropatia lieve</Run>
+                    </TextBlock>
+                    <TextBlock Margin="0,0,20,0" FontSize="10">
+                        <Run FontWeight="Bold" Foreground="#F39C12">Moderato:</Run>
+                        <Run Foreground="#7F8C8D">nefropatia (VFG 60-30); retinopatia con edema; neuropatia dolorosa</Run>
+                    </TextBlock>
+                    <TextBlock FontSize="10">
+                        <Run FontWeight="Bold" Foreground="#E74C3C">Grave:</Run>
+                        <Run Foreground="#7F8C8D">nefropatia (VFG &lt;30); retinopatia proliferante; piede diabetico</Run>
+                    </TextBlock>
+                </WrapPanel>
+            </StackPanel>
+        </Border>
+
+        <!-- Pulsanti -->
+        <Border
+            Grid.Row="3"
+            Padding="15"
+            Background="#F8F9FA"
+            BorderBrush="#BDC3C7"
+            BorderThickness="0,1,0,0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <Button
+                    Grid.Column="0"
+                    Padding="15,8"
+                    Background="#95A5A6"
+                    BorderThickness="0"
+                    Click="BtnReset_Click"
+                    Content="Ripristina valori originali"
+                    FontSize="12"
+                    Foreground="White" />
+
+                <Button
+                    Grid.Column="2"
+                    Margin="0,0,10,0"
+                    Padding="15,8"
+                    Background="#E74C3C"
+                    BorderThickness="0"
+                    Click="BtnAnnulla_Click"
+                    Content="Annulla"
+                    FontSize="12"
+                    FontWeight="Bold"
+                    Foreground="White"
+                    IsCancel="True" />
+
+                <Button
+                    Grid.Column="3"
+                    Padding="20,8"
+                    Background="#27AE60"
+                    BorderThickness="0"
+                    Click="BtnConferma_Click"
+                    Content="Conferma e Genera PDF"
+                    FontSize="12"
+                    FontWeight="Bold"
+                    Foreground="White"
+                    IsDefault="True" />
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

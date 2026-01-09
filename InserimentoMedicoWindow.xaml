@@ -1,0 +1,166 @@
+<Window
+    x:Class="DMInps.InserimentoMedicoWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Inserimento Dati Medico Certificatore"
+    Width="550"
+    Height="650"
+    WindowStartupLocation="CenterScreen"
+    ResizeMode="NoResize">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Titolo e spiegazione -->
+        <StackPanel Grid.Row="0" Margin="0,0,0,15">
+            <TextBlock
+                FontSize="16"
+                FontWeight="Bold"
+                Foreground="#E74C3C"
+                Text="Elenco medici non disponibile" />
+            <TextBlock
+                Margin="0,10,0,0"
+                FontSize="12"
+                TextWrapping="Wrap"
+                Text="Non è stato possibile recuperare automaticamente l'elenco dei medici dal database. È necessario inserire manualmente i dati del medico certificatore." />
+        </StackPanel>
+
+        <!-- Istruzioni per recuperare il codice -->
+        <Border Grid.Row="1"
+                Background="#FFF3CD"
+                BorderBrush="#FFEEBA"
+                BorderThickness="1"
+                CornerRadius="5"
+                Padding="15"
+                Margin="0,0,0,15">
+            <StackPanel>
+                <TextBlock FontWeight="Bold" FontSize="13" Margin="0,0,0,10">
+                    Come recuperare il Codice Medico e il Nome Utente:
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap" FontSize="12">
+                    <Run Text="1. Apri " /><Run FontWeight="Bold" Text="Mille Utilità" /><LineBreak />
+                    <Run Text="2. Entra come Amministratore (password predefinita: " /><Run FontWeight="Bold" Text="admin" /><Run Text=")" /><LineBreak />
+                    <Run Text="3. Clicca su: " /><Run FontWeight="Bold" Text="Amministratore - Gestione Utenti - Lista Utenti" /><LineBreak />
+                    <Run Text="4. Nella colonna " /><Run FontWeight="Bold" Text="Cod Mg" /><Run Text=" (6a colonna, scorri a destra) trovi il tuo codice" /><LineBreak />
+                    <Run Text="5. Nella colonna " /><Run FontWeight="Bold" Text="Nome Utente" /><Run Text=" (2a colonna) trovi il nome utente" /><LineBreak />
+                    <Run Text="6. Prendi nota di entrambi i valori e inseriscili qui sotto" />
+                </TextBlock>
+            </StackPanel>
+        </Border>
+
+        <!-- Form inserimento dati -->
+        <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <!-- Nome login Millewin (NomePass) -->
+                <TextBlock FontWeight="SemiBold" Margin="0,0,0,5">
+                    Nome login Millewin *
+                </TextBlock>
+                <TextBox x:Name="TxtNomeUtente"
+                         Height="30"
+                         Padding="5"
+                         Margin="0,0,0,15"
+                         ToolTip="Il nome utente che trovi nella seconda colonna (Nome Utente)" />
+
+                <!-- Codice Medico (UserId) -->
+                <TextBlock FontWeight="SemiBold" Margin="0,0,0,5">
+                    Codice medico (Cod Mg) *
+                </TextBlock>
+                <TextBox x:Name="TxtCodiceMedico"
+                         Height="30"
+                         Padding="5"
+                         Margin="0,0,0,15"
+                         ToolTip="Il codice che trovi nella colonna 'Cod Mg'" />
+
+                <!-- Cognome e Nome -->
+                <TextBlock FontWeight="SemiBold" Margin="0,0,0,5">
+                    Cognome e nome *
+                </TextBlock>
+                <TextBox x:Name="TxtCognomeNome"
+                         Height="30"
+                         Padding="5"
+                         Margin="0,0,0,15"
+                         ToolTip="Es: Rossi Mario" />
+
+                <!-- Indirizzo -->
+                <TextBlock FontWeight="SemiBold" Margin="0,0,0,5">
+                    Indirizzo
+                </TextBlock>
+                <TextBox x:Name="TxtIndirizzo"
+                         Height="30"
+                         Padding="5"
+                         Margin="0,0,0,15"
+                         ToolTip="Es: Via Roma 1, 00100 Roma (RM)" />
+
+                <!-- Telefono -->
+                <TextBlock FontWeight="SemiBold" Margin="0,0,0,5">
+                    Telefono
+                </TextBlock>
+                <TextBox x:Name="TxtTelefono"
+                         Height="30"
+                         Padding="5"
+                         Margin="0,0,0,15" />
+
+                <!-- Email -->
+                <TextBlock FontWeight="SemiBold" Margin="0,0,0,5">
+                    Email
+                </TextBlock>
+                <TextBox x:Name="TxtEmail"
+                         Height="30"
+                         Padding="5"
+                         Margin="0,0,0,10" />
+
+                <TextBlock FontSize="11" Foreground="Gray" Margin="0,0,0,0">
+                    * Campi obbligatori
+                </TextBlock>
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- Pulsanti -->
+        <StackPanel
+            Grid.Row="3"
+            Margin="0,15,0,0"
+            HorizontalAlignment="Center"
+            Orientation="Horizontal">
+            <Button
+                x:Name="BtnCaricaDati"
+                Width="150"
+                Height="35"
+                Margin="0,0,10,0"
+                Background="#3498DB"
+                BorderThickness="0"
+                Click="BtnCaricaDati_Click"
+                Content="Carica dati salvati"
+                FontWeight="Bold"
+                Foreground="White"
+                Cursor="Hand" />
+            <Button
+                x:Name="BtnSalva"
+                Width="120"
+                Height="35"
+                Margin="0,0,10,0"
+                Background="#27AE60"
+                BorderThickness="0"
+                Click="BtnSalva_Click"
+                Content="Salva"
+                FontWeight="Bold"
+                Foreground="White"
+                Cursor="Hand" />
+            <Button
+                x:Name="BtnAnnulla"
+                Width="120"
+                Height="35"
+                Background="#E74C3C"
+                BorderThickness="0"
+                Click="BtnAnnulla_Click"
+                Content="Annulla"
+                FontWeight="Bold"
+                Foreground="White"
+                Cursor="Hand" />
+        </StackPanel>
+    </Grid>
+</Window>
