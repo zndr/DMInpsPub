@@ -55,6 +55,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <!-- Escludi la sottocartella debugs dal globbing automatico SDK-style -->
+    <Compile Remove="debugs\**" />
+    <None Remove="debugs\**" />
+    <EmbeddedResource Remove="debugs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <EditorConfigFiles Remove="D:\OneDrive - ZANI Dario Giorgio\Apps\DMInps1\Services\.editorconfig" />
     <Resource Include="DMInps.ico" />
   </ItemGroup>

@@ -1,9 +1,9 @@
 ; Script Inno Setup per DMInps
-; Versione: 1.0.7
+; Versione: 1.0.9
 ; Autore: Dario Giorgio Zani
 
 #define MyAppName "DMInps"
-#define MyAppVersion "1.0.7"
+#define MyAppVersion "1.0.9"
 #define MyAppPublisher "Dario Giorgio Zani - MMG Lumezzane (BS)"
 #define MyAppExeName "DMInps.exe"
 #define MyAppDescription "Crea Relazione Diabete per INPS"
